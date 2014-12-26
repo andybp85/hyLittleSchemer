@@ -11,9 +11,9 @@ but never really got a Scheme interpreter figured out on my old work Windows lap
 Hy is exactly what I needed to dive into this. 
 
 I'll be keeping track of the functions I write for The Little Schemer (and maybe more!)
-as I go on. Hope this helps someone! Cheers!
+as I go on. Hope this helps someone! 
 
-I decided to include my whole Python 3.4 virtalenv to hopefully make my life easier. The 
+I decided to include my whole Python 3.4 virtalenv to hopefully make life easier. The 
 functions are in hyLittleSchemer.hy
 
 Implemented so far:

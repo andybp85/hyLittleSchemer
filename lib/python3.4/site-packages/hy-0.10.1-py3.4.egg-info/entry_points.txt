@@ -1,0 +1,5 @@
+[console_scripts]
+hy = hy.cmdline:hy_main
+hy2py = hy.cmdline:hy2py_main
+hyc = hy.cmdline:hyc_main
+

@@ -1,0 +1,10 @@
+#!/Users/andrew/dev/python/virtualenvs/HY3/bin/python3.4
+# EASY-INSTALL-ENTRY-SCRIPT: 'hy==0.10.1','console_scripts','hy'
+__requires__ = 'hy==0.10.1'
+import sys
+from pkg_resources import load_entry_point
+
+if __name__ == '__main__':
+    sys.exit(
+        load_entry_point('hy==0.10.1', 'console_scripts', 'hy')()
+    )

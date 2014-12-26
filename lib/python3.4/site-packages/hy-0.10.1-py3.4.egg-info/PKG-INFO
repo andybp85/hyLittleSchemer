@@ -1,0 +1,29 @@
+Metadata-Version: 1.1
+Name: hy
+Version: 0.10.1
+Summary: Lisp and Python love each other.
+Home-page: http://hylang.org/
+Author: Paul Tagliamonte
+Author-email: tag@pault.ag
+License: Expat
+Description: Hy is a Python <--> Lisp layer. It helps
+        make things work nicer, and lets Python and the Hy lisp variant play
+        nice together. 
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: DFSG approved
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Lisp
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Topic :: Software Development :: Code Generators
+Classifier: Topic :: Software Development :: Compilers
+Classifier: Topic :: Software Development :: Libraries

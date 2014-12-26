@@ -1,7 +1,7 @@
 hyLittleSchemer
 ===============
 
-The Little Schemer in Hy
+**The Little Schemer in Hy**
 
 
 I've been dying to learn a lisp dialect for a while, and have been using Python for 
@@ -25,3 +25,4 @@ Implemented so far:
 *member?*  
 *rember*  
 *firsts*  
+

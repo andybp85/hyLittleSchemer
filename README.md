@@ -14,4 +14,4 @@ I'll be keeping track of the functions I write for The Little Schemer (and maybe
 as I go on. Hope this helps someone! Cheers!
 
 I decided to include my whole Python 3.4 virtalenv to hopefully make my life easier. The 
-functions are in lib/python3.4/site-packages/littleSchemer.hy
+functions are in hyLittleSchemer.hy

@@ -16,11 +16,12 @@ as I go on. Hope this helps someone! Cheers!
 I decided to include my whole Python 3.4 virtalenv to hopefully make my life easier. The 
 functions are in hyLittleSchemer.hy
 
-**Implemented so far:**
-atom?
-null?
-eq?
-lat?
-member?
-rember
-firsts
+Implemented so far:
+-------------------
+*atom?*  
+*null?*  
+*eq?*  
+*lat?*  
+*member?*  
+*rember*  
+*firsts*  

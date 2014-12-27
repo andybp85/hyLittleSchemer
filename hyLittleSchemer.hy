@@ -68,9 +68,53 @@
   (lambda [l]
     (cond
       [(null? l) '()]
-      [elthe (cons (car (car l)) (firsts (cdr l)))])))
+      [elthe (cons (car (car l)) 
+               (firsts (cdr l)))])))
 
+; insertR
+; akes three arguments: the atoms new and old, and a lat.  function 
+; insertR builds a lat with new inserted to the right of the first 
+; occurrence of old
+(def insertR
+  (lambda [new old lat]
+    (cond 
+      [(null? lat) '()]
+      [elthe 
+        (cond 
+          [(eq? (car lat) old) 
+           (cons old 
+             (cons new (cdr lat)))]
+          [elthe (cons (car lat) 
+                   (insertR new old 
+                     (cdr lat)))])])))
 
+; insert:
+; insertL inserts the atom new to the left of the first occurrence 
+; of the atom old in lat
+(def insertL
+  (lambda [new old lat]
+    (cond 
+      [(null? lat) '()]
+      [elthe 
+        (cond 
+          [(eq? (car lat) old) 
+             (cons new lat)]
+          [elthe (cons (car lat) 
+                   (insertL new old 
+                     (cdr lat)))])])))
 
+; subst
+; replaces the first occurrence of old in the lat with new
+(def subst
+  (lambda [new old lat]
+    (cond 
+      [(null? lat) '()]
+      [elthe 
+        (cond 
+          [(eq? (car lat) old) 
+            (cons new (cdr lat))]
+          [elthe (cons (car lat) 
+                   (subst new old 
+                     (cdr lat)))])])))
 
 

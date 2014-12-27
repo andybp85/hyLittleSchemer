@@ -88,7 +88,7 @@
                    (insertR new old 
                      (cdr lat)))])])))
 
-; insert:
+; insertL
 ; insertL inserts the atom new to the left of the first occurrence 
 ; of the atom old in lat
 (def insertL

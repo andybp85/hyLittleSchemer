@@ -25,4 +25,6 @@ Implemented so far:
 *member?*  
 *rember*  
 *firsts*  
-
+*insertR*
+*insertL*
+*subst*

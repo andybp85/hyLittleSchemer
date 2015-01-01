@@ -1,0 +1,8 @@
+[console_scripts]
+bpython = bpython.cli:main
+bpython-curtsies = bpython.curtsies:main [curtsies]
+bpython-urwid = bpython.urwid:main [urwid]
+
+[gui_scripts]
+bpython-gtk = bpython.gtk_:main
+

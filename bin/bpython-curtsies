@@ -1,0 +1,10 @@
+#!/Users/andrew/dev/python/virtualenvs/HY3/bin/python3.4
+# EASY-INSTALL-ENTRY-SCRIPT: 'bpython==0.13.1','console_scripts','bpython-curtsies'
+__requires__ = 'bpython==0.13.1'
+import sys
+from pkg_resources import load_entry_point
+
+if __name__ == '__main__':
+    sys.exit(
+        load_entry_point('bpython==0.13.1', 'console_scripts', 'bpython-curtsies')()
+    )

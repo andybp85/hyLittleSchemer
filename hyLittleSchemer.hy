@@ -193,4 +193,23 @@
                  (cdr lat)))])))
 
 
+; multirember
+; gives as its final value the lat with all occurrences of a removed
+;
+; => (multirember 'cup '(coffee cup tea cup and hick cup))
+; ('coffee' 'tea' 'and' 'hick')
+
+(def multirember
+  (lambda [a lat]
+    (cond
+      [(null? lat) '()]
+      [elthe
+        (cond
+          [(eq? a (car lat))
+             (multirember a (cdr lat))]
+          [elthe (cons (car lat)
+                   (multirember a (cdr lat)))])])))
+
+
+
 

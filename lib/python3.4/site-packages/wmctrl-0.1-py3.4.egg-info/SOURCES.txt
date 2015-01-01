@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+wmctrl.py
+test/test_wmctrl.py
+wmctrl.egg-info/PKG-INFO
+wmctrl.egg-info/SOURCES.txt
+wmctrl.egg-info/dependency_links.txt
+wmctrl.egg-info/top_level.txt

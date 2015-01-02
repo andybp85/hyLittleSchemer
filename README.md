@@ -33,6 +33,25 @@ Implemented so far:
 *multiinsertR*
 *multiinsertL*
 *multisubst*
+*add1*
+*sub1*
+*o+*
+*o-*
+*addtup*
+*x*
+*tup+*
+*o>*
+*o<*
+*o=*
+*↑*
+*÷*
+*length*
+*pick*
+*rempick*
+*no-nums*
+*all-nums*
+
+
 
 
 

@@ -211,5 +211,73 @@
                    (multirember a (cdr lat)))])])))
 
 
+; multiinsertR 
+; like insertR but after every instance in list
+;
+; => (multiinsertR 'cup 'tea '(coffee tea and tea))
+; ('coffee' 'tea' 'cup' 'and' 'tea' 'cup')
+
+(def multiinsertR
+  (lambda [new old lat]
+    (cond 
+      [(null? lat) '()]
+      [elthe
+        (cond 
+          [(eq? old (car lat))
+             (cons old (cons new 
+                        (multiinsertR new old 
+                          (cdr lat))))]
+          [elthe (cons (car lat)
+                   (multiinsertR new old 
+                     (cdr lat)))])])))
+
+
+; multiinsertL
+; like insertL but every instance
+;
+; => (multiinsertL 'fried 'fish '(chips and fish or fish and fried))
+; ('chips' 'and' 'fried' 'fish' 'or' 'fried' 'fish' 'and' 'fried')
+
+(def multiinsertL
+  (lambda [new old lat]
+    (cond 
+      [(null? lat) '()]
+      [elthe 
+        (cond 
+          [(eq? old (car lat)) 
+             (cons new (cons old 
+                         (multiinsertL new old 
+                           (cdr lat))))]
+          [elthe (cons (car lat)
+                   (multiinsertL new old
+                     (cdr lat)))])])))
+
+
+; multisubst
+; like subst but every instance
+;
+; => (multisubst 'fried 'fish '(chips and fish or fish and fried))
+; ('chips' 'and' 'fried' 'or' 'fried' 'and' 'fried')
+
+(def multisubst
+  (lambda [new old lat]
+    (cond 
+      [(null? lat) '()]
+      [elthe 
+        (cond 
+          [(eq? old (car lat)) 
+             (cons new
+               (multisubst new old 
+                 (cdr lat)))]
+          [elthe (cons (car lat)
+                   (multisubst new old
+                     (cdr lat)))])])))
+
+
+;--------------------------------------------------------
+; 4.  Numbers Game
+;--------------------------------------------------------
+
+
 
 

@@ -30,6 +30,9 @@ Implemented so far:
 *subst*  
 *subst2*  
 *multirember*
+*multiinsertR*
+*multiinsertL*
+*multisubst*
 
 
 
